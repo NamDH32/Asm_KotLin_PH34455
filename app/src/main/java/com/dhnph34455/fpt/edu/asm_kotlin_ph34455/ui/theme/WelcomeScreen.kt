@@ -64,10 +64,11 @@ fun WelcomeScreen(navController: NavHostController) {
                         fontWeight = FontWeight.W700,
                         color = Color.Black
                     )
-                    Spacer(modifier = Modifier.height(30.dp))
+                    Spacer(modifier = Modifier.height(40.dp))
                     Box(
-                        modifier = Modifier.fillMaxWidth(),
-                        contentAlignment = Alignment.Center
+                        modifier = Modifier.fillMaxWidth()
+                            .padding(top = 15.dp),
+                        contentAlignment = Alignment.Center,
                     ) {
                         Text(
                             text = "The best simple place where you discover most wonderful furnitures and make your home beautiful",
@@ -105,7 +106,7 @@ fun WelcomeScreen(navController: NavHostController) {
 
 }
 
-@Preview(showBackground = true, showSystemUi = true)
+@Preview(showBackground = true, showSystemUi = true, device = "id:pixel_6_pro")
 @Composable
 fun WelcomeScreenPreview() {
     val navController = rememberNavController()

@@ -1,4 +1,4 @@
-package com.dhnph34455.fpt.edu.asm_kotlin_ph34455.ui.theme
+package com.dhnph34455.fpt.edu.asm_kotlin_ph34455
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package com.dhnph34455.fpt.edu.asm_kotlin_ph34455
+package com.chinhdev.assignment_kot104
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -27,7 +27,13 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.MyCart
+import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.R
+import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.WelcomeScreen
+import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.ui.theme.CheckOutSceen
 import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.ui.theme.LoginScreen
+import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.ui.theme.OderSuccess
+import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.ui.theme.ProductDetailScreen
 import com.dhnph34455.fpt.edu.asm_kotlin_ph34455.ui.theme.ScreenHome
 
 class MainActivity : ComponentActivity() {
@@ -45,9 +51,13 @@ class MainActivity : ComponentActivity() {
 
             ) {
                 NavHost(navController = navController, startDestination = "welcome") {
-                    composable( "welcome") { WelcomeScreen(navController = navController) }
+                    composable("welcome") { WelcomeScreen(navController = navController) }
                     composable("login") { LoginScreen(navController = navController) }
                     composable("home") { ScreenHome(navController = navController) }
+                    composable("details") { ProductDetailScreen(navController = navController) }
+                    composable("cart") { MyCart(navController = navController) }
+                    composable("order") { CheckOutSceen(navController = navController) }
+                    composable("sucssces") { OderSuccess(navController = navController) }
                 }
             }
         }

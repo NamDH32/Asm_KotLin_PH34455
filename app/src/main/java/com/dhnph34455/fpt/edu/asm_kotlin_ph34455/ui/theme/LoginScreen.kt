@@ -119,6 +119,8 @@ fun LoginScreen(navController: NavHostController) {
                 horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.padding(15.dp)
             ) {
+                Spacer(modifier = Modifier.height(20.dp))
+
                 Text(
                     "Email:",
                     fontSize = 20.sp,

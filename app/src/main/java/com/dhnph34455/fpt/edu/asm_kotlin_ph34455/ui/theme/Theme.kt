@@ -1,5 +1,6 @@
-package com.dhnph34455.fpt.edu.asm_kotlin_ph34455.ui.theme
+package com.dhnph34455.fpt.edu.asm_kotlin_ph34455
 
+import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
